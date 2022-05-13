@@ -1,3 +1,4 @@
+import React from "react";
 import './App.css';
 import Home from "./Home.js";
 import Procedures from "./Procedures.js";
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/procedures" element={<Procedures />} />
           <Route path="/contact-us" element={<Contact />}/>
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
     </div>
